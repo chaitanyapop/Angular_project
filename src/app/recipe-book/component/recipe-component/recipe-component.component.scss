@@ -1,0 +1,31 @@
+.recipe_container{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    width: 40%;
+    .recipe_button_container{
+        border-bottom: 2px solid rgb(178, 171, 171);
+        padding: 5px;
+
+
+    }
+    .recipe_item_container{
+
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(226, 210, 210);
+        margin: 5px;
+        border-radius: 5px;
+        padding: 10px;
+
+
+        .recipe_image{
+            width: 70px;
+            height: 60px;
+            padding-top: 20px;
+            // padding-right: 5px;
+            
+            border-radius: 4px;
+        }
+    }
+}

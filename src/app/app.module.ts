@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { RecipeBookModule } from './recipe-book/recipe-book.module';
-import { RecipeComponentComponent } from './recipe-book/component/recipe-component/recipe-component.component';
-import { ShoppingComponentComponent } from './shopping-list/component/shopping-component/shopping-component.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +16,7 @@ import { ShoppingComponentComponent } from './shopping-list/component/shopping-c
     AppRoutingModule,
     ShoppingListModule,
     RecipeBookModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
