@@ -9,18 +9,4 @@ import { Recipe } from '../model/recipe.model';
 })
 export class RecipeComponentComponent {
 
-  recipe_list : Recipe[] = [
-    {
-      name: 'A Test Recipe',
-      description: 'This is a simple test',
-      imagePath: '../assets/image.png'
-    },
-    {
-      name: 'Another Test Recipe',
-      description: 'This is another simple test',
-      imagePath: '../assets/image.png'
-
-    }
-  ];
-
 }
