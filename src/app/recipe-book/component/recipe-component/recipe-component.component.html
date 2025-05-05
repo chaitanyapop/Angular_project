@@ -1,0 +1,8 @@
+<div class="recipe_container_main">
+    <div class="recipe_list_container">
+        <app-recipe-list (individualRecipeEvent)="individualRecipeEventClicked($event)"></app-recipe-list>
+    </div>
+    <div class="recipe_detail_container">
+        <app-recipe-detail [recipe_data]="recipe_data"></app-recipe-detail>
+    </div>
+</div>

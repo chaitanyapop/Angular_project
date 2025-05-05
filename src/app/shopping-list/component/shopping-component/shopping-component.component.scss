@@ -1,0 +1,16 @@
+.shopping_list_main_container{
+    width: 50%;
+    margin: 10px;
+
+    ul{
+        border: 2px solid rgb(199, 192, 192);
+        margin: 0;
+        padding: 10px;
+
+        a{
+            text-decoration: none; 
+            cursor: pointer;
+            color: black;
+        }
+    }
+}

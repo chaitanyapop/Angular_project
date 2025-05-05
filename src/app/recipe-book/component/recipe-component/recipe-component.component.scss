@@ -1,0 +1,16 @@
+.recipe_container_main{
+    display : flex;
+    flex-direction: row;
+    column-gap: 20px;
+    // justify-content: space-between;
+    margin: 20px;
+
+    .recipe_list_container{
+
+        width: 50%;
+    }
+    .recipe_detail_container{
+
+        width: 50%;
+    }
+}
