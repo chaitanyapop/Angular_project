@@ -2,15 +2,9 @@
     <div class="recipe_button_container">
         <button class="common_button">New Recipe</button>
     </div>
-    <div class="recipe_item_container" *ngFor="let recipe of recipe_list">
-        <div >
-            <h2>{{recipe.name}}</h2>
-            <p>{{recipe.description}}</p>
-            
-        </div><!--Later replace this with recipe-item component using property binding-->
-        <span>
-            <img [src]="recipe.imagePath" class="recipe_image">
-        </span>
+    <div  *ngFor="let recipe of recipe_list">
+        <!-- -->
+        <app-recipe-item [recipeData]="recipe" (click)="recipeClicked(recipe)"></app-recipe-item>
     </div>
 
 </div>

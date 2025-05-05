@@ -1,1 +1,10 @@
-<p>recipe-item works!</p>
+<div class="recipe_item_container">
+    <div >
+        <h2>{{recipeData.name}}</h2>
+        <p>{{recipeData.description}}</p>
+            
+    </div>
+    <span>
+        <img [src]="recipeData.imagePath" class="recipe_image" >
+    </span> 
+</div>

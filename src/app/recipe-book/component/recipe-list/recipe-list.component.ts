@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Recipe } from '../model/recipe.model';
 
 @Component({
@@ -7,6 +7,8 @@ import { Recipe } from '../model/recipe.model';
   styleUrl: './recipe-list.component.scss'
 })
 export class RecipeListComponent {
+
+  @Output() individualRecipeEvent = new EventEmitter<any>();
 
   recipe_list : Recipe[] = [
       {
@@ -21,5 +23,9 @@ export class RecipeListComponent {
   
       }
     ];
+
+    recipeClicked(event : any){
+      this.individualRecipeEvent.emit(event);
+    }
 
 }

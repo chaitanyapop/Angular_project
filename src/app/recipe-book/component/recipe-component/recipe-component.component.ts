@@ -9,4 +9,10 @@ import { Recipe } from '../model/recipe.model';
 })
 export class RecipeComponentComponent {
 
+  recipe_data : any;
+
+  individualRecipeEventClicked(event: any){
+    this.recipe_data = event;
+  }
+
 }
