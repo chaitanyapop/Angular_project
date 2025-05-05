@@ -1,7 +1,7 @@
 <div>
-  <app-header></app-header>
+  <app-header (shoppingEvent)="shoppingClickEvent($event)" (recipeEvent)="recipeClickedEvent($event)"></app-header>
 </div>
 <div>
-  <app-recipe-component></app-recipe-component>
-  <app-shopping-component></app-shopping-component>
+  <app-recipe-component *ngIf="pageValue == 1"></app-recipe-component>
+  <app-shopping-component *ngIf="pageValue == 2"></app-shopping-component>
 </div>

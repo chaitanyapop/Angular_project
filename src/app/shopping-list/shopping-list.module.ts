@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { ShoppingListRoutingModule } from './shopping-list-routing.module';
 import { ShoppingComponentComponent } from './component/shopping-component/shopping-component.component';
+import { ShoppingEditComponent } from './component/shopping-edit/shopping-edit.component';
 
 
 @NgModule({
   declarations: [
 
-    ShoppingComponentComponent
+    ShoppingComponentComponent,
+      ShoppingEditComponent
   ],
   imports: [
     CommonModule,

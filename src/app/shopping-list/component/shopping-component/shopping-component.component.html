@@ -1,1 +1,16 @@
-<p>shopping-component works!</p>
+<div class="shopping_list_main_container">
+    <div>
+        <app-shopping-edit></app-shopping-edit>
+    </div>
+    <div>
+        <div class="shopping_list_ingredient_container">
+            <ul *ngFor="let ingredient of ingredients">
+                <a href="#">
+                    {{ ingredient.name }} ({{ ingredient.quantity }})
+                </a>
+            </ul>
+        </div>
+    </div>
+    
+
+</div>
