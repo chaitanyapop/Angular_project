@@ -3,16 +3,16 @@
         <div style="display: flex;">
             <div style="display: flex; flex-direction: column;">
                 <label class="ingredient_label">Ingredient Name: </label>
-                <input type="text" placeholder="Ingredient name" required>
+                <input type="text" placeholder="Ingredient name" required #ingredientInput>
             </div>
             <div style="display: flex; flex-direction: column;">
                 <label class="ingredient_label">Quantity: </label>
-                <input type="text" placeholder="Quantity" required>
+                <input type="text" placeholder="Quantity" required #quantityInput>
             </div>
         </div>
         
         <div>
-            <button type="submit" class="common_button">Add</button>
+            <button type="submit" class="common_button" (click)="addButton($event)">Add</button>
             <button type="button" class="common_button">Clear</button>
             <button type="button" class="common_button">Delete</button>
         </div>

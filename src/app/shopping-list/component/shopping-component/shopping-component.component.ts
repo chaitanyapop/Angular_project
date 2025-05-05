@@ -12,4 +12,9 @@ export class ShoppingComponentComponent {
     {name: 'Apples', quantity: 5},
     {name: 'Tomatoes', quantity: 10},
   ]
+
+  addIngredientQuantity(event:any){
+    console.log(event)
+    this.ingredients.push(event);
+  }
 }
